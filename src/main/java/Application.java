@@ -17,6 +17,8 @@ public class Application {
 		Trip testTrip = tripService.getFirstTrip();
 		String output = MessageFormat.format("The trip is from {0} to {1} ", testTrip.getFrom(), testTrip.getTo());
 		System.out.println(output);
+		System.out.println("Testing git commit here");
+	
 	}
 
 }
