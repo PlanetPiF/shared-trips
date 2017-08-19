@@ -3,6 +3,7 @@ import java.text.MessageFormat;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.planetpif.model.Passenger;
 import com.planetpif.model.Trip;
 import com.planetpif.service.TripService;
 
@@ -17,7 +18,11 @@ public class Application {
 		Trip testTrip = tripService.getFirstTrip();
 		String output = MessageFormat.format("The trip is from {0} to {1} ", testTrip.getFrom(), testTrip.getTo());
 		System.out.println(output);
-		System.out.println("Testing git commit here");
+		
+		System.out.println("Passengers: ");
+		for(Passenger p : testTrip.getPassengers()) {
+			System.out.println(p.getFirstName() + " " + p.getLastName());
+		}
 	
 	}
 

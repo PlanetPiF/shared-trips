@@ -6,6 +6,6 @@ import com.planetpif.model.Trip;
 
 public interface TripRepository {
 
-	List<Trip> getAllTrips();
+	public List<Trip> getAllTrips();
 
 }

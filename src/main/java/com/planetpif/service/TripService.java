@@ -4,6 +4,6 @@ import com.planetpif.model.Trip;
 
 public interface TripService {
 
-	Trip getFirstTrip();
+	public Trip getFirstTrip();
 
 }
