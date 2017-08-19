@@ -19,6 +19,7 @@ public class Application {
 		String output = MessageFormat.format("The trip is from {0} to {1} ", testTrip.getFrom(), testTrip.getTo());
 		System.out.println(output);
 		
+		// See which passengers are in this trip
 		System.out.println("Passengers: ");
 		for(Passenger p : testTrip.getPassengers()) {
 			System.out.println(p.getFirstName() + " " + p.getLastName());
